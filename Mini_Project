@@ -1,0 +1,14 @@
+from data_analysis import ProgrammingLanguage as PL
+
+# create ProgrammingLanguage object and read in data
+pl = PL()
+pl.read_data('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-03-21/languages.csv')
+
+# execute calculate_counts function
+pl.calculate_counts('is_open_source')
+
+# execute calculate_counts function
+pl.calculate_counts('appeared')
+
+# produce a plot
+pl.generate_plot('number_of_users', 'number_of_jobs');
